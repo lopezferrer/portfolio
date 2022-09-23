@@ -70,6 +70,7 @@ h1 {
     font-family: 'Source Code Pro', monospace;
     line-height: 40px;
     letter-spacing: 0;
+    padding-top: 40px;
 }
 
 h2 {
@@ -103,18 +104,18 @@ p {
 
 #about-me {
     width: 600px;
-    text-align: left;
-    margin-left: 25px;
+    margin: auto;
 }
 
 #skills {
     width: 600px;
     color: gray;
-    text-align: left;
-    margin-left: 25px;
+    margin: auto;
 }
 
 li {
+    width: 600px;
+    margin: auto;
     color: white;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
