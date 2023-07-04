@@ -1,6 +1,7 @@
 body {
     background: black;
     width: 80%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -112,13 +113,12 @@ h2 {
     margin: auto;
 }
 
-
 #projects {
     width: 80%;
 }
 
 h3 {
-    width: 600px;
+    width: 100%;
     margin: auto;
     color: white;
     font-family: 'Source Code Pro', monospace;
@@ -127,6 +127,7 @@ h3 {
 
 p {
     width: 80%;
+    margin: auto auto auto 50px;
     margin: auto;
     color: white;
     font-family: 'Source Code Pro', monospace;
@@ -137,10 +138,11 @@ p {
 
 li {
     width: 100%;
-    margin: auto;
+    margin: auto auto auto 70px;
     color: white;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;  
+    list-style-type: none;
 }
