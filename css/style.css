@@ -1,14 +1,14 @@
 body {
     background: black;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
 .topnav {
-    position:fixed;
-    width: 120%;
-    margin: auto;
+    position: fixed;
+    width: 95%;
+    margin: -20px auto auto -3.5em;
     background-color: black;
     overflow: hidden;
 }
@@ -31,11 +31,6 @@ body {
     color: black;
 }
   
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-  
 .topnav .icon {
     display: none;
 }
@@ -48,7 +43,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: absolute;}
     .topnav.responsive a.icon {
         position: absolute;
         right: 0;
@@ -61,10 +56,31 @@ body {
     }
 }
 
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
 #title {
-    width: 360px;
+    width: 380px;
     margin: auto;  
     padding-top: 3em;
+}
+
+#projects_list {
+    width: 80%;
+}
+
+#about-me {
+    width: 80%;
+    margin: auto;
+    text-align:justify;
+}
+
+#skills {
+    width: 100%;
+    color: gray;
+    margin: auto;
 }
 
 h1 {
@@ -78,43 +94,26 @@ h1 {
     padding-top: 40px;
 }
 
+h2 { 
+    color: white;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400px;
+    line-height: 30px;
+    overflow: hidden;
+    border-right: .20em solid orange;
+    white-space: nowrap;
+    animation: typewriter 10s steps(44) infinite normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
 @keyframes typewriter { 
     0% {width: 0;}
     40% {width: 100%;}
     100% {width: 100%;}
 }
 
-h2 { 
-    color: white;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 400;
-    line-height: 30px;
-    overflow: hidden;
-    border-right: .20em solid orange;
-
-    white-space: nowrap;
-    animation: typewriter 10s steps(44) infinite normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
-
 @keyframes blinkTextCursor { 
     from { border-color: transparent; } to { border-color: orange; }
-}
-
-#about-me {
-    width: 80%;
-    margin: auto;
-    text-align:justify;
-}
-
-#skills {
-    width: 80%;
-    color: gray;
-    margin: auto;
-}
-
-#projects {
-    width: 80%;
 }
 
 h3 {
@@ -145,4 +144,5 @@ li {
     font-weight: 400;
     line-height: 20px;  
     list-style-type: none;
+    text-align: justify;
 }
